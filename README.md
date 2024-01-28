@@ -1,4 +1,4 @@
-# floatify README
+# Floatify
 
 Floatify is an extension for converting all non-specified floating point numbers in a C# file to floats on save. That is `1.0` -> `1.0f` on save.
 
