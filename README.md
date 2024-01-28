@@ -4,6 +4,8 @@ Floatify is an extension for converting all non-specified floating point numbers
 
 This is useful when programming games in engines such as Unity, where most floating point math is done with floats. Other C# game engines also use floats for most calculations, and having to write the f suffix on every number manually is slow and obtrusive.
 
+Do note: this extension may have some severe bugs. Please do not hesitate to suggest improvements in a GitHub issue.
+
 ## Features
 
 NOTE: Read [Requirements](#requirements) below for how to enable the plugin.
