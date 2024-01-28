@@ -47,12 +47,10 @@ export class Floatify implements vscode.CodeActionProvider {
     }
     const documentText = document.getText(range);
 
-    const indexesOfDoubles = documentText.matchAll(/(\d+\.+\d+)(?!d|f|m)/g);
+    const indexesOfDoubles = documentText.matchAll(/(\-?\d+\.+\d+)(?!d|f|m)/g);
 
     const hl = hljs.highlight(documentText, { language: "csharp" });
     const codeHiglightingLines = hl.value.split("\n").map((x) => x.trim());
-
-    console.log(hl.value);
 
     const fix = new vscode.CodeAction(
       `Convert unspecified doubles to float`,
@@ -80,9 +78,6 @@ export class Floatify implements vscode.CodeActionProvider {
       }
     }
 
-    if (fix.edit.entries.length === 0) {
-      return undefined;
-    }
     return [fix];
   }
 }

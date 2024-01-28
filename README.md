@@ -57,6 +57,12 @@ This has problems identifying if numbers are inside strings.
 
 Users appreciate release notes as you update your extension.
 
+### 0.0.4
+
+Working release with some known bugs.
+
+Fixed handling of negative numbers.
+
 ### 0.0.1
 
 Initial release with known bugs
