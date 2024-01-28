@@ -49,6 +49,18 @@ NOTE: If this file does not exist this extension does NOTHING.
 }
 ```
 
+YOU ALSO need to enable code-actions on save by adding this to your .vscode/setting.json file.
+
+```json
+{
+    // -snip
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit"
+    },
+    // -snip
+}
+```
+
 ## Known Issues
 
 This has problems identifying if numbers are inside strings.
