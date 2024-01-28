@@ -49,7 +49,7 @@ NOTE: If this file does not exist this extension does NOTHING.
 }
 ```
 
-YOU ALSO need to enable code-actions on save by adding this to your .vscode/setting.json file.
+YOU ALSO need to enable code-actions on save by adding this to your `/.vscode/setting.json` file.
 
 ```json
 {
