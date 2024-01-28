@@ -1,6 +1,6 @@
 # Floatify
 
-Floatify is an extension for converting all non-specified floating point numbers in a C# file to floats on save. That is `1.0` -> `1.0f` on save.
+Floatify is a VSCode extension for converting all non-specified floating point numbers in a C# file to floats on save. That is `1.0` -> `1.0f` on save.
 
 This is useful when programming games in engines such as Unity, where most floating point math is done with floats. Other C# game engines also use floats for most calculations, and having to write the f suffix on every number manually is slow and obtrusive.
 
@@ -37,6 +37,8 @@ var text = "100.0"; // Unchanged (somewhat understands strings)
 var vec = new Vector3(1.23f, 14.3f, 10.9f); // Converted to floats
 var math = 1.0f + 13.0f + 44.0f * 1.4f * 1; // Converted to floats except where its an int
 ```
+
+This will auto-fix `"Cannot convert from 'double' to 'float'"` (`CS1503`) on save 💾.
 
 ## Requirements
 
