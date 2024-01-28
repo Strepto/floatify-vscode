@@ -1,8 +1,13 @@
 {
   "name": "floatify",
-  "displayName": "Floatify-C#",
+  "displayName": "Floatify",
   "description": "Always add f suffix to floating point numbers without suffix in C# files",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Strepto/floatify-vscode"
+  },
+  "license": "MIT",
   "engines": {
     "vscode": "^1.85.0"
   },
